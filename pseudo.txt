@@ -13,7 +13,8 @@ the result as the first number arg in the new expression with the new type of ar
 For example: 5 + 5 + 5 * 4 entered sequencially into the calculator will:
         constantly check if there are operator args of different types entered into the input
         and when triggered cause the "operate()" function (equivalent to the equal sign without operatorType value reset) 
-        to execute and then take the displayed result as the first number arg in the next equation unless subsequently cleared or all-cleared.
+        to execute and then take the displayed result as the first number arg in the next equation unless subsequently 
+        cleared or all-cleared.
 
         First display 5 + 5 + 5 as clicked in the display, then when the * operator is clicked on the 
         calculator interface the check for operators args of different kinds/types will cause 
@@ -29,7 +30,7 @@ For example: 5 + 5 + 5 * 4 entered sequencially into the calculator will:
     1. Number clicked: displays number
 
     2. Operator clicked: operatorType value is checked, 
-    
+
         if no value or value equals operator then, 
         displays operator, operatorType value is set to the entered operator
 
