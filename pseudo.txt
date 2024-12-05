@@ -105,6 +105,10 @@ For example: 5 + 5 + 5 * 4 entered sequencially into the calculator will:
 
     3. Number clicked: displays number
 
+
+        THE BELOW WILL NOW BE HANDLED MOSTLY BY AN EVENT HANDLER< OPERATE WILL TAKE THE
+        OPERATOR AND NUMBERS AND RETURN THE RESULT:
+        
     4. "Equal Sign" clicked: operate() function called,
         operate() function checks operatorType vlaue,
         operate() feeds number args into corresponding operator function,
