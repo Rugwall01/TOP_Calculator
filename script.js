@@ -1,4 +1,10 @@
 
+let operatorType = '';
+let displayValue = '';
+  
+  
+  
+  
   const add = function(a, b) {
     return a + b;
   }
@@ -16,10 +22,96 @@
     return a/b;
   };
 
+  
+  const operate = function(funct, a, b) {
+    return funct(a, b);
+  };
 
+  const clear = function() {
+    operatorType = '';
+    displayValue = '';
 
-
-
+  }
+  
+  console.log(operate(multiply, 2, 3));
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   const power = function(base, exp) {
