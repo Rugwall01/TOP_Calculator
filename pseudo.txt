@@ -50,3 +50,7 @@ For example: 5 + 5 + 5 * 4 entered sequencially into the calculator will:
         operate() feeds number args into corresponding operator function,
         operate() displays results,
         operatorType value is cleared and reset to nothing (this is done by Equal sign, NOT by operate())
+
+
+Additionally, when the '.' button is clicked (or when an argument containing the '.' is processed) the argument that
+'.' is inside will need to be converted into a float.(each operator function needs to be able to handle a float)
