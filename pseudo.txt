@@ -1,7 +1,8 @@
 TOP Calculator Plus:
 
 I need to create a Calculator with a user interface that can add subtract multiply
-and divide. I need it to be able to take 2 or more(MORE DESIRED) arguments that are numbers and as many arguments as needed of one kind of operator at a time(usually 1).
+and divide. I need it to be able to take 2 or more(MORE DESIRED) arguments that are numbers and as many arguments 
+as needed of one kind of operator at a time.
 
 In order to have multiple number args and multiple operator args work in a simple enough way, I will 
 need to call the operator function of the operat arg only once regardless of the amount of operator args of that type 
