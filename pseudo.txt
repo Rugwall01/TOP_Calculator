@@ -5,8 +5,8 @@ and divide. I need it to be able to take 2 or more(MORE DESIRED) arguments that 
 as needed of one kind of operator at a time.
 
 In order to have multiple number args and multiple operator args work in a simple enough way, I will 
-need to call the operator function of the operat arg only once regardless of the amount of operator args of that type 
-and then process all number args in the operator function, then when an operator arg of another type
+need to call the corresponding function of the operator arg only once regardless of the amount of operator args 
+of that type and then process all number args in the operator function, then when an operator arg of another type
 is entered the "operate()" function will need to immediately execute on the previous expression and use 
 the result as the first number arg in the new expression with the new type of arg.
 
