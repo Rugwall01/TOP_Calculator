@@ -1,0 +1,49 @@
+TOP Calculator Plus:
+
+I need to create a Calculator with a user interface that can add subtract multiply
+and divide. I need it to be able to take 2 or more(MORE DESIRED) arguments that are numbers and as many arguments as needed of one kind of operator at a time(usually 1).
+
+In order to have multiple number args and multiple operator args work in a simple enough way, I will 
+need to call the operator function of the operat arg only once regardless of the amount of operator args of that type 
+and then process all number args in the operator function, then when an operator arg of another type
+is entered the "operate()" function will need to immediately execute on the previous expression and use 
+the result as the first number arg in the new expression with the new type of arg.
+
+For example: 5 + 5 + 5 * 4 entered sequencially into the calculator will:
+        constantly check if there are operator args of different types entered into the input
+        and when triggered cause the "operate()" function (equivalent to the equal sign) to execute 
+        and then take the displayed result as the first number arg in the next equation unless cleared or all-cleared.
+
+        First display 5 + 5 + 5 as clicked in the display, then when the * operator is clicked on the 
+        calculator interface the check for operators args of different kinds/types will cause 
+        5 + 5 + 5 to be summed and the result to be displayed and used as the first arg in the new 
+        equation/expression that is tied to the * (multiplication) operator. 
+
+        so when */X is clicked, the display will clear and then display 15 and then when 4 is hit the 
+        display will display 15 * 4 and then when the equal sign is hit or another operator arg of a different 
+        kind the "operate()" function will be called and display the product of 60.
+
+
+
+    1. Number clicked: displays number
+
+    2. Operator clicked: operatorType value is checked, 
+        if no value or value equals operator then, 
+        displays operator, operatorType value is set to the entered operator
+
+        if operatorType value exists and is not equal to the operator that was clicked then,
+        operate() function is called,
+        the current number args are processed by the current operatorType value's corresponding function then,
+        the result is displayed and the operatorType value is set to the entered operator,
+
+        (the operators' corresponding function will handle single number arg entries and provide the correct output)
+
+        (when the '=' sign, 'a', or 'ac' buttons are clicked the operatorType value will be cleared to an empty string)
+
+    3. Number clicked: displays number
+
+    4. "Equal Sign" clicked: operate() function called,
+        operate() function checks operatorType vlaue,
+        operate() feed number args into corresponding operator function,
+        results are displayed;
+        operatorType value is cleared and reset to nothing (this is done by Equal sign, NOT by operate())
