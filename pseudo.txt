@@ -12,23 +12,24 @@ the result as the first number arg in the new expression with the new type of ar
 
 For example: 5 + 5 + 5 * 4 entered sequencially into the calculator will:
         constantly check if there are operator args of different types entered into the input
-        and when triggered cause the "operate()" function (equivalent to the equal sign) to execute 
-        and then take the displayed result as the first number arg in the next equation unless cleared or all-cleared.
+        and when triggered cause the "operate()" function (equivalent to the equal sign without operatorType value reset) 
+        to execute and then take the displayed result as the first number arg in the next equation unless subsequently cleared or all-cleared.
 
         First display 5 + 5 + 5 as clicked in the display, then when the * operator is clicked on the 
         calculator interface the check for operators args of different kinds/types will cause 
         5 + 5 + 5 to be summed and the result to be displayed and used as the first arg in the new 
         equation/expression that is tied to the * (multiplication) operator. 
 
-        so when */X is clicked, the display will clear and then display 15 and then when 4 is hit the 
-        display will display 15 * 4 and then when the equal sign is hit or another operator arg of a different 
-        kind the "operate()" function will be called and display the product of 60.
+        so when */X is clicked, the display will clear and then display 15 and then when 4 is subsequently clicked the 
+        display will display 15 * 4 and then when the equal sign is clicked or another operator arg of a different 
+        kind is clicked, the "operate()" function will be called and display the product of 60.
 
 
 
     1. Number clicked: displays number
 
     2. Operator clicked: operatorType value is checked, 
+    
         if no value or value equals operator then, 
         displays operator, operatorType value is set to the entered operator
 
@@ -45,6 +46,6 @@ For example: 5 + 5 + 5 * 4 entered sequencially into the calculator will:
 
     4. "Equal Sign" clicked: operate() function called,
         operate() function checks operatorType vlaue,
-        operate() feed number args into corresponding operator function,
-        results are displayed;
+        operate() feeds number args into corresponding operator function,
+        operate() displays results,
         operatorType value is cleared and reset to nothing (this is done by Equal sign, NOT by operate())
