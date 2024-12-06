@@ -1,3 +1,4 @@
+
 #container1 {
     display: flex;
     justify-content: center;
@@ -11,27 +12,45 @@
     display: flex;
     justify-content: center;
     border: 5px solid green;
-    height: fit-content;
+    /*height: fit-content;*/
+    height: 100vh;
+    width: 1000px;
     padding: 10px;
 
+}
+
+#calculator {
+    border: 2px solid black;
+
+    width: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    border: 1px solid rgb(109, 37, 109);
+    height: fit-content;
+    width: fit-content;
 }
 .output {
     width: 500px;
     height: 85px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     border: 1px solid red;
+    margin-top: 30px;
 }
 #display {
-    width: 450px;
+    width: 475px;
     height: 75px;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .input{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 500px;
     width: 500px;
     justify-content: center;
@@ -88,6 +107,7 @@ button {
     display: flex;
     flex-direction: column;
     /*justify-content: space-around;*/
+    border: 1px solid orangered;
 }
 
 .resetBtns {
