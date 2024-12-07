@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'magnetobold';
+    src: url('./fonts/magnetob-webfont.woff2') format('woff2'),
+         url('./fonts/magnetob-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 #container1 {
     display: flex;
@@ -31,7 +39,25 @@
     border: 1px solid rgb(109, 37, 109);
     height: fit-content;
     width: fit-content;
+    
 }
+
+#title {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'magnetobold';
+}
+
+#logo{
+    margin: 5px;
+    font-family: 'magnetobold';
+}
+
+#trademark {
+    margin: 5px;
+    font-family: 'magnetobold';
+}
+
 .output {
     width: 500px;
     height: 85px;
@@ -39,13 +65,23 @@
     justify-content: center;
     align-items: center;
     border: 1px solid red;
-    margin-top: 30px;
+    margin-top: 5px;
 }
 #display {
     width: 475px;
     height: 75px;
     border: 1px solid black;
     border-radius: 10px;
+}
+
+#display1 {
+    width: 475px;
+    height: 75px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-style: italic;
+    color: black;
+    font-size: 3rem;
 }
 
 .input{
@@ -71,7 +107,17 @@ button {
     width: 50px;
     height: 50px;
     border-radius: 10px;
+    background-color: rgb(149, 169, 189, .3);
+    
 
+}
+
+button:hover {
+    background-color: rgb(149, 169, 189, .4);
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .n {
@@ -87,20 +133,6 @@ button {
 #point {
     width: 85px;
     height: 85px;
-}
-
-
-#numberBtns {
-    border: 1px solid purple;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 300px;
-    height: 350px;
-    padding: 5px;
-    justify-content: space-around;
-    align-items: center;
-
 }
 
 #leftBtns {
@@ -121,6 +153,26 @@ button {
     justify-content: space-between;
 
 }
+.resetBtns button {
+    width: 138px;
+}
+
+#numberBtns {
+    border: 1px solid purple;
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    width: 300px;
+    height: 350px;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#numberBtns button {
+    font-size: x-large;
+}
 
 .operatorBtns {
     border: 1px solid purple;
@@ -137,12 +189,9 @@ button {
 
 }
 
-.resetBtns button {
-    width: 138px;
-}
-
 .operatorBtns button {
     height: 205px;
     width: 80px;
+    font-size: xx-large;
 
 }

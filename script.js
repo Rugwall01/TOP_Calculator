@@ -1,4 +1,8 @@
 
+
+const inputDisp = document.querySelector("#display1");
+
+
 let operatorType = '';
 let displayValue = '';
   
@@ -21,21 +25,31 @@ let displayValue = '';
   const divide = function(a, b) {
     return a/b;
   };
-
   
   const operate = function(funct, a, b) {
     return funct(a, b);
   };
 
-  const clear = function() {
+  /*const clear = function() {
     operatorType = '';
     displayValue = '';
 
-  }
-  
-  console.log(operate(multiply, 2, 3));
+  }*/
   
   
+
+
+
+
+appendToDisp = (arg) => inputDisp.value += arg;
+
+function clearAll() {
+    return inputDisp.value = "";
+}
+
+function del() {
+    inputDisp.value = inputDisp.value.slice(0,-1);
+ }
   
   
   

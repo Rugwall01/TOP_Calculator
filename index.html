@@ -13,38 +13,42 @@
             <div id="container2">
                 <div id="calculator">
                     <div class="content">
+                        <div id="title">
+                            <h3 id="logo">Calcutex Model: 1000</h3> 
+                            <h3 id="trademark">Rugwall01™</h3>
+                        </div>
                         <div class="output">
                             <div id="display">
-
+                                <input id="display1" readonly>
                             </div>
                         </div>
                         <div class="input">
                             <div id="buttons">
                                 <div id="leftBtns">
                                     <div class="resetBtns">
-                                        <button id="clear"></button>
-                                        <button id="allClear"></button>
+                                        <button onclick="clearAll()">C</button>
+                                        <button onclick="del()" id="delete">Del</button>
                                     </div>
                                     <div id="numberBtns">
-                                        <button class="n 1"></button>
-                                        <button class="n 2"></button>
-                                        <button class="n 3"></button>
-                                        <button class="n 4"></button>
-                                        <button class="n 5"></button>
-                                        <button class="n 6"></button>
-                                        <button class="n 7"></button>
-                                        <button class="n 8"></button>
-                                        <button class="n 9"></button>
-                                        <button id="point"></button>
-                                        <button class="n 0"></button>
-                                        <button id="equals"></button>
+                                        <button onclick="appendToDisp('1')" class="n 1">1</button>
+                                        <button onclick="appendToDisp('2')" class="n 2">2</button>
+                                        <button onclick="appendToDisp('3')" class="n 3">3</button>
+                                        <button onclick="appendToDisp('4')" class="n 4">4</button>
+                                        <button onclick="appendToDisp('5')" class="n 5">5</button>
+                                        <button onclick="appendToDisp('6')" class="n 6">6</button>
+                                        <button onclick="appendToDisp('7')" class="n 7">7</button>
+                                        <button onclick="appendToDisp('8')" class="n 8">8</button>
+                                        <button onclick="appendToDisp('9')" class="n 9">9</button>
+                                        <button onclick="appendToDisp('.')" id="point">.</button>
+                                        <button onclick="appendToDisp('0')" class="n 0">0</button>
+                                        <button onclick="operate()" id="equals">=</button>
                                     </div>
                                 </div>
                                 <div class="operatorBtns">
-                                    <button class="plus"></button>
-                                    <button class="minus"></button>
-                                    <button class="times"></button>
-                                    <button class="dividedBy"></button>
+                                    <button class="plus">+</button>
+                                    <button class="minus">-</button>
+                                    <button class="times">x</button>
+                                    <button class="dividedBy">÷</button>
                                 </div>
                             </div>
                         </div>
