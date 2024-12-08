@@ -61,10 +61,12 @@ body{
 #logo{
     margin: 5px;
     font-family: 'magnetobold';
-    background: -webkit-linear-gradient(#eee, #4c65ac);
+    /*background: -webkit-linear-gradient(#eee, #4c65ac);*/
+    background: -webkit-linear-gradient(#eee, #eee, rgb(216, 216, 216), rgba(216, 216, 216, 0.904), rgba(216, 216, 216, 0.815), rgba(216, 216, 216, 0.658), rgba(192, 192, 192, 0.5), #697aa8, silver, #eee, #eee, #E1E1E1 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 #trademark {
@@ -72,7 +74,8 @@ body{
     font-family: 'magnetobold';
     /* linear-gradient(#222,#eee,#222);*/
 
-    background: -webkit-linear-gradient(#eee, #4c65ac);
+    /*background: -webkit-linear-gradient(#eee, #4c65ac);*/
+    background: -webkit-linear-gradient(#eee, #eee, rgb(216, 216, 216), rgba(216, 216, 216, 0.904), rgba(216, 216, 216, 0.815), rgba(216, 216, 216, 0.658), rgba(192, 192, 192, 0.5), #697aa8, silver, #eee, #eee, #E1E1E1 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
