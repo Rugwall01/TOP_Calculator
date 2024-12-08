@@ -2,9 +2,8 @@
 
 const inputDisp = document.querySelector("#display1");
 
-
-let operatorType = '';
-let displayValue = '';
+let operators = /[\+\-x÷]/;
+let isResult = false;
   
   
   
@@ -42,6 +41,10 @@ let displayValue = '';
     if(display[1] == '-'){inputDisp.value = execute(subtract, NUmdisplay[0], display[2]);};
     if(display[1] == 'x'){inputDisp.value = execute(multiply, display[0], display[2]);};
     if(display[1] == '÷'){inputDisp.value = execute(divide, display[0], display[2]);};
+
+    isResult = true;
+
+
 };
  console.log(execute(add, 2, 5));
 
@@ -57,7 +60,48 @@ let displayValue = '';
 
 
 
-appendToDisp = (arg) => inputDisp.value += arg;
+/*appendToDisp = (arg) => {
+    if(inputDisp.value === ''){
+        //isResult = false;
+        inputDisp.value += arg;
+    }if(inputDisp.value !== '' && inputDisp.value.split(' ').length === 3 && inputDisp.value.match(operators)){
+        if(arg === operators){
+            operate();
+            appendToDisp(arg);
+        }
+    }if(isResult === true && arg !== operators){
+        clearAll();
+        appendToDisp(arg);
+        isResult = false
+    }else if(isResult === true && arg === operators){
+        appendToDisp(arg);
+    }
+};*/
+
+appendToDisp = (arg) => {
+    if (isResult && inputDisp.value.match(operators) && !arg.match(operators)){
+        inputDisp.value += arg;
+        operate();
+    }
+    else if (isResult && !arg.match(operators)) {
+        clearAll();
+        inputDisp.value += arg;
+        isResult = false;
+    }
+    else if (isResult && arg.match(operators)) {
+        inputDisp.value += arg;
+        isResult = false;
+    }
+    else if (arg.match(operators) && inputDisp.value.split(' ').length === 3) {
+        operate();
+        inputDisp.value += arg;
+        isResult = false;
+    }
+    else {
+        inputDisp.value += arg;
+    }
+};
+
 
 function clearAll() {
     return inputDisp.value = "";
