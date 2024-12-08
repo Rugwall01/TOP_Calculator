@@ -26,9 +26,25 @@ let displayValue = '';
     return a/b;
   };
   
-  const operate = function(funct, a, b) {
-    return funct(a, b);
+  const execute = function(funct, a, b) {
+    try {
+        return funct(a, b);}
+    catch(error){
+        inputDisp.value = "Error";
+    }
   };
+
+  const operate = function() {
+    let display = inputDisp.value.split(' ');
+    display[0] = Number(display[0]);
+    display[2] = Number(display[2]);
+    if(display[1] == '+'){inputDisp.value = execute(add, display[0], display[2]);};
+    if(display[1] == '-'){inputDisp.value = execute(subtract, NUmdisplay[0], display[2]);};
+    if(display[1] == 'x'){inputDisp.value = execute(multiply, display[0], display[2]);};
+    if(display[1] == '÷'){inputDisp.value = execute(divide, display[0], display[2]);};
+};
+ console.log(execute(add, 2, 5));
+
 
   /*const clear = function() {
     operatorType = '';
