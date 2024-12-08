@@ -57,6 +57,7 @@
     font-family: 'magnetobold';
     background: -webkit-linear-gradient(#eee, #4c65ac);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -67,6 +68,7 @@
 
     background: -webkit-linear-gradient(#eee, #4c65ac);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
