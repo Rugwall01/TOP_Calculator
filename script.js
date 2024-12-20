@@ -35,7 +35,7 @@ let isResult = false;
     display[0] = Number(display[0]);
     display[2] = Number(display[2]);
     if(display[1] == '+'){inputDisp.value = execute(add, display[0], display[2]);};
-    if(display[1] == '-'){inputDisp.value = execute(subtract, NUmdisplay[0], display[2]);};
+    if(display[1] == '-'){inputDisp.value = execute(subtract, display[0], display[2]);};
     if(display[1] == 'x'){inputDisp.value = execute(multiply, display[0], display[2]);};
     if(display[1] == '÷'){inputDisp.value = execute(divide, display[0], display[2]);};
 
